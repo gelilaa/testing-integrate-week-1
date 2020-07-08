@@ -8,7 +8,8 @@
  */
 const isItThere = (arrOfStrings, toFind) => {
   let exists = false;
-  for (let _ of _) {
+  for (let string of arrOfStrings) {
+    exists = exists || (string === toFind);
 
   }
   return exists;
@@ -18,7 +19,7 @@ const isItThere = (arrOfStrings, toFind) => {
 
 
 // test the function (all the tests work!)
-const assert = chai.assert;
+//const assert = chai.assert;
 
 describe('isItThere checks if a certain string is in an array of strings', () => {
   it('empty arrays return false', () => {
